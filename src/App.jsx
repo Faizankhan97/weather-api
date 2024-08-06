@@ -44,7 +44,7 @@ function App() {
           </div>
           <div className="winfo">
             <img src={Cloud} alt="" className="icon" />
-            <h1>{Math.floor(convertToCelsius(isData?.data?.main?.temp))}°C</h1>
+            <h1>{isData?.data?.main?.temp && Math.floor(convertToCelsius(isData.data.main.temp))} °C</h1>
             <h2>{isData?.data?.name}</h2>
             <div className="details">
               <div className="col">
